@@ -80,5 +80,63 @@
             </form>
         </div>
     </div>
+     <!-- Register Modal -->
+    <div id="registerModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeRegister">&times;</span>
+            <h2>Register</h2>
+            <form id="registerForm">
+                <label for="registerName">Name:</label>
+                <input type="text" id="registerName" name="registerName" required />
+                <label for="registerEmail">Email:</label>
+                <input type="email" id="registerEmail" name="registerEmail" required />
+                <label for="registerPassword">Password:</label>
+                <input type="password" id="registerPassword" name="registerPassword" required />
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+        // Modal handling
+        const loginBtn = document.getElementById('loginBtn');
+        const registerBtn = document.getElementById('registerBtn');
+        const loginModal = document.getElementById('loginModal');
+        const registerModal = document.getElementById('registerModal');
+        const closeLogin = document.getElementById('closeLogin');
+        const closeRegister = document.getElementById('closeRegister');
+
+        loginBtn.onclick = () => {
+            loginModal.style.display = 'block';
+        };
+        registerBtn.onclick = () => {
+            registerModal.style.display = 'block';
+        };
+        closeLogin.onclick = () => {
+            loginModal.style.display = 'none';
+        };
+        closeRegister.onclick = () => {
+            registerModal.style.display = 'none';
+        };
+        window.onclick = (event) => {
+            if (event.target === loginModal) {
+                loginModal.style.display = 'none';
+            }
+            if (event.target === registerModal) {
+                registerModal.style.display = 'none';
+            }
+        };
+    // Form submission handlers (dummy)
+        document.getElementById('loginForm').onsubmit = (e) => {
+            e.preventDefault();
+            alert('Login form submitted!');
+            loginModal.style.display = 'none';
+        };
+        document.getElementById('registerForm').onsubmit = (e) => {
+            e.preventDefault();
+            alert('Registration form submitted!');
+            registerModal.style.display = 'none';
+        };
+    </script>
 </body>
 </html>
