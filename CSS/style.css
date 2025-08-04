@@ -60,6 +60,19 @@ nav ul li a:hover,
 nav ul li a.deactive{
     color: #ff1723;
 }
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../image/Denim Jacket.jpg') no-repeat center center/cover;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
 .product-card h3 {			
     margin: 1rem 0 0.5rem;
     font-weight: 900;
