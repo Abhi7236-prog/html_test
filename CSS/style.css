@@ -60,3 +60,19 @@ nav ul li a:hover,
 nav ul li a.deactive{
     color: #ff1723;
 }
+.product-card h3 {			
+    margin: 1rem 0 0.5rem;
+    font-weight: 600;
+    color: #222;
+}
+
+.product-card p {
+    color: #ff3f6c;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.product-card .btn {
+    width: 100%;
+    border-radius: 30px;
+}
