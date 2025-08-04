@@ -92,3 +92,46 @@ nav ul li a.deactive {
     margin-bottom: 2rem;
     text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
 }
+.btn {
+    background: #ff3f6c;
+    color: #fff;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    box-shadow: 0 5px 15px rgba(255,63,108,0.4);
+}
+.btn:hover {
+    background: #e6325c;
+    box-shadow: 0 8px 20px rgba(230,50,92,0.6);
+}
+
+/* Products Section */
+.products {
+    padding: 4rem 0;
+    background: #fff;
+    text-align: center;
+}
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #222;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    padding: 0 1rem;
+}
+.product-card {
+    background: #fafafa;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
