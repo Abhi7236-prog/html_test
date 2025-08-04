@@ -232,3 +232,13 @@ footer {
     cursor: pointer;
     transition: color 0.3s ease;
 }
+.close:hover {
+    color: #ff3f6c;
+}
+/* Form Styles */
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #333;
+}
