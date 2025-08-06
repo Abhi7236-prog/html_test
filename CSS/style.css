@@ -149,7 +149,7 @@ nav ul li a.deactive {
 .product-card:hover img {
     transform: scale(1.1);
 }
-.product-card h3 {
+.product-card h {
     margin: 1rem 0 0.5rem;
     font-weight: 600;
     color: #222;
