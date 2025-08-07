@@ -213,18 +213,19 @@ footer {
     to {opacity: 1;}
 }
 
+/* Neumorphic Modal Content */
 .modal-content {
-    background-color: #fff;
+    background: #e0e0e0;
     margin: 10% auto;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 20px;
     width: 90%;
     max-width: 400px;
     position: relative;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    box-shadow: 10px 10px 30px #bebebe,
+                -10px -10px 30px #ffffff;
     animation: slideDown 0.4s ease forwards;
 }
-
 @keyframes slideDown {
     0% {
         opacity: 0;
@@ -236,8 +237,9 @@ footer {
     }
 }
 
+/* Neumorphic Close Button */
 .close {
-    color: #aaa;
+    color: #666;
     position: absolute;
     top: 15px;
     right: 20px;
@@ -258,20 +260,52 @@ form label {
     font-weight: 600;
     color: #333;
 }
-
+/* Neumorphic Input Fields */
 form input {
     width: 100%;
-    padding: 0.5rem 0.75rem;
-    margin-bottom: 1.25rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 12px;
     font-size: 1rem;
-    transition: border-color 0.3s ease;
+    background: #e0e0e0;
+    box-shadow: inset 6px 6px 10px #bebebe,
+                inset -6px -6px 10px #ffffff;
+    transition: box-shadow 0.3s ease;
 }
 
 form input:focus {
-    border-color: #ff3f6c;
     outline: none;
+    box-shadow: inset 4px 4px 6px #bebebe,
+                inset -4px -4px 6px #ffffff;
+}
+
+/* Neumorphic Form Buttons */
+.modal-content .btn {
+    background: #e0e0e0;
+    color: #333;
+    border: none;
+    padding: 0.75rem 2rem;
+    width: 100%;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 6px 6px 12px #bebebe,
+                -6px -6px 12px #ffffff;
+    transition: all 0.3s ease;
+}
+
+.modal-content .btn:hover {
+    background: #d3d3d3;
+    box-shadow: inset 2px 2px 5px #bebebe,
+                inset -2px -2px 5px #ffffff;
+}
+
+/* Optional: Dark text for light bg */
+form label {
+    color: #444;
+    font-weight: 600;
 }
 
 /* Responsive */
