@@ -59,13 +59,13 @@ nav ul li a {
 }
 
 nav ul li a:hover,
-nav ul li a.deactive {
+nav ul li a.active {
     color: #ff3f6c;
 }
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url("/image /10d92fa5-d05d-423e-86c6-756dbd3167ae.jpg" ) no-repeat center center/cover;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../image/Denim Jacket.jpg') no-repeat center center/cover;
     height: 70vh;
     display: flex;
     justify-content: center;
@@ -92,6 +92,7 @@ nav ul li a.deactive {
     margin-bottom: 2rem;
     text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
 }
+
 .btn {
     background: #ff3f6c;
     color: #fff;
@@ -103,6 +104,7 @@ nav ul li a.deactive {
     transition: background 0.3s ease;
     box-shadow: 0 5px 15px rgba(255,63,108,0.4);
 }
+
 .btn:hover {
     background: #e6325c;
     box-shadow: 0 8px 20px rgba(230,50,92,0.6);
@@ -114,17 +116,20 @@ nav ul li a.deactive {
     background: #fff;
     text-align: center;
 }
+
 .products h2 {
     font-size: 2.5rem;
     margin-bottom: 2rem;
     color: #222;
 }
+
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 2rem;
     padding: 0 1rem;
 }
+
 .product-card {
     background: #fafafa;
     border-radius: 10px;
@@ -140,6 +145,7 @@ nav ul li a.deactive {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(255,63,108,0.4);
 }
+
 .product-card img {
     width: 100%;
     border-radius: 10px;
@@ -149,20 +155,24 @@ nav ul li a.deactive {
 .product-card:hover img {
     transform: scale(1.1);
 }
+
 .product-card h3 {
     margin: 1rem 0 0.5rem;
     font-weight: 600;
     color: #222;
 }
+
 .product-card p {
     color: #ff3f6c;
     font-weight: 700;
     margin-bottom: 1rem;
 }
+
 .product-card .btn {
     width: 100%;
     border-radius: 30px;
 }
+
 /* Footer */
 footer {
     background: #222;
@@ -171,6 +181,7 @@ footer {
     padding: 1.5rem 0;
     margin-top: 3rem;
 }
+
 /* Animations */
 @keyframes fadeInUp {
     0% {
@@ -182,6 +193,7 @@ footer {
         transform: translateY(0);
     }
 }
+
 /* Modal Styles */
 .modal {
     display: none;
@@ -195,10 +207,12 @@ footer {
     background-color: rgba(0,0,0,0.6);
     animation: fadeIn 0.3s ease forwards;
 }
+
 @keyframes fadeIn {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+
 .modal-content {
     background-color: #fff;
     margin: 10% auto;
@@ -232,9 +246,11 @@ footer {
     cursor: pointer;
     transition: color 0.3s ease;
 }
+
 .close:hover {
     color: #ff3f6c;
 }
+
 /* Form Styles */
 form label {
     display: block;
@@ -252,16 +268,18 @@ form input {
     font-size: 1rem;
     transition: border-color 0.3s ease;
 }
+
 form input:focus {
     border-color: #ff3f6c;
     outline: none;
 }
+
 /* Responsive */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.2rem;
     }
-     nav ul {
+    nav ul {
         flex-direction: column;
         background: #222;
         position: fixed;
